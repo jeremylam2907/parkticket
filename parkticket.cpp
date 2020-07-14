@@ -12,7 +12,7 @@ int GuestEnter() //Enters the name and age
 
     string Firstname;
     string Lastname;
-    double Age;
+    int Age;
 
     cout << "\n\nFirst Name: ";
     cin >> Firstname;
@@ -32,7 +32,6 @@ int GuestEnter() //Enters the name and age
 
 
     return ( Age > 100 || Age < 0)? 1 : 0; // Invalid age, re -enter
-    // return ( Age == int) ? 0 : 1;
     
 }
 
@@ -112,13 +111,15 @@ int main()
 
             //Discount Price
     cout << "\n\n       Do you have any discount voucher?\n";
+    cout << "       Please type [yes] or [y] or [Yes] or [Y] only if you have it. \n";
     string Net;
     cin >> Net;
     int D;
+    
 
     if ( Net == "yes" || Net == "y" || Net == "Yes" || Net == "Y")
     {
-        cout << "       Please type [yes] or [y] or [Yes] or [Y] only if you have it. ";
+        
         cout << "       Enter the discount in percent\n";
         int NetPrice;
         cin >> NetPrice;
