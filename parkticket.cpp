@@ -12,7 +12,7 @@ int GuestEnter() //Enters the name and age
 
     string Firstname;
     string Lastname;
-    int Age;
+    double Age;
 
     cout << "\n\nFirst Name: ";
     cin >> Firstname;
